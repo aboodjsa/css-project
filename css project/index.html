@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for encoding and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abood Jamal Portfolio</title>
+
+    <!-- Import Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ================== HEADER ================== -->
+    <header>
+        <h1>Abood Jamal Portfolio</h1>
+    </header>
+
+    <!-- ================== NAVIGATION BAR ================== -->
+    <nav>
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li> <!-- new nav link -->
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================== MAIN CONTENT ================== -->
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="card">
+            <h2>Presentation</h2>
+            <p>Hi, my name is Abood Jamal Salim. I am passionate about web development and enjoy learning new technologies.</p>
+        </section>
+        
+        <!-- WORK / SKILLS SECTION -->
+        <section id="work" >
+            <h2>My Skills</h2>
+            <table>
+                <tr><th>Skill</th><th>Level</th></tr>
+                <tr><td>HTML</td><td>Intermediate</td></tr>
+                <tr><td>CSS</td><td>Beginner</td></tr>
+                <tr><td>JavaScript</td><td>Beginner</td></tr>
+            </table>
+        </section>
+
+        <!-- 🔹 PROJECTS SECTION -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!-- Project cards container -->
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="portfolio.jpg" alt="Project 1 Screenshot">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio showcasing my skills, hobbies, and projects. Built using HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="btn-project">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="pizzaweb.png" alt="Project 2 Screenshot">
+                    <h3>Pizza Ordering App</h3>
+                    <p>A mockup web app for ordering pizza online. Features a modern UI with styled navigation and forms.</p>
+                    <a href="#" class="btn-project">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="marketing.jpg" alt="Project 3 Screenshot">
+                    <h3>Marketing Landing Page</h3>
+                    <p>A responsive landing page designed for digital marketing campaigns with strong call-to-actions.</p>
+                    <a href="#" class="btn-project">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME SECTION -->
+<section id="resume">
+    <h2>My Networks</h2>
+    <div class="profile-container">
+        <img src="abood.jpeg" alt="Profile Image" class="profile-img">
+        <div class="link-container">
+            <a href="https://www.linkedin.com/in/abood-jamal-082700243" 
+               target="_blank" 
+               class="btn-linkedin">
+                <i class="fab fa-linkedin"></i> Connect with me on LinkedIn
+            </a>
+        </div>
+    </div>
+</section>
+
+        <!-- HOBBIES SECTION -->
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul class="list-inline fancy-list">
+        <li class="hobby-card">📚 Reading</li>
+        <li class="hobby-card">💻 Coding</li>
+        <li class="hobby-card">✈️ Traveling</li>
+    </ul>
+</section>
+
+<!-- TECHNOLOGIES SECTION -->
+<section id="tech">
+    <h2>Technologies I Know</h2>
+    <ul class="list-inline fancy-list">
+        <li class="tech-card">🔤 HTML</li>
+        <li class="tech-card">🎨 CSS</li>
+        <li class="tech-card">⚙️ JavaScript</li>
+    </ul>
+</section>
+
+
+     <!-- MEDIA SECTION -->
+<section id="media">
+    <h2>Media</h2>
+    <div class="media-container">
+        <div class="video-box">
+            <iframe 
+                src="https://www.youtube.com/embed/Ro90g6h5Pjg" 
+                title="YouTube video"
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="audio-box">
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 My Presentation Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>

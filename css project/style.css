@@ -1,0 +1,395 @@
+/* ================== GENERAL STYLES ================== */
+/* Apply Roboto font across the entire site */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin:1000;
+  padding: 0;
+  background-color: #f4f4f9; /* soft background color */
+  color: #333; /* default text color */
+  line-height: 1.6;
+  margin-left: 100;
+  align-content: center;
+}
+
+/* Centered header with dark background */
+header {
+  background: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* ================== NAVIGATION BAR ================== */
+/* Navbar container */
+nav {
+  background: #005599;
+  padding: 10px 0;
+}
+
+/* Navbar links inline */
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar-links li {
+  display: inline; /* inline items */
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+/* Resume Section */
+#resume {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 50px auto;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Heading */
+#resume h2 {
+    font-size: 2rem;
+    color: #4b0082;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4b0082;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(75, 0, 130, 0.3);
+}
+
+/* Link Button */
+.btn-linkedin {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #0077b5;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 119, 181, 0.3);
+}
+
+.btn-linkedin:hover {
+    background-color: #005f8d;
+    box-shadow: 0 6px 15px rgba(0, 119, 181, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Font Awesome Icon */
+.btn-linkedin i {
+    margin-right: 8px;
+}
+
+/* ================== SECTION CARDS ================== */
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+}
+#work{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* ================== TABLE STYLING ================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #005599;
+  color: white;
+}
+
+/* General Section Style */
+#hobbies, #tech {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9ff, #e9ecff);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 50px auto;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Section Headings */
+#hobbies h2, #tech h2 {
+    font-size: 2rem;
+    color: #4b0082;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(75, 0, 130, 0.1);
+}
+
+/* Fancy List Layout */
+.fancy-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Hobby / Tech Cards */
+.hobby-card, .tech-card {
+    background: linear-gradient(135deg, #ffffff, #f0f0ff);
+    border: 2px solid #d1c4e9;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4b0082;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(75, 0, 130, 0.1);
+}
+
+/* Hover Animation */
+.hobby-card:hover, .tech-card:hover {
+    background: linear-gradient(135deg, #4b0082, #7c3aed);
+    color: #fff;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.3);
+}
+
+/* Add subtle bounce animation */
+@keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.hobby-card, .tech-card {
+    animation: bounceIn 0.6s ease forwards;
+}
+
+/* ================== PROJECTS SECTION ================== */
+.projects-container {
+  display: grid; /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* hover lift effect */
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-project {
+  display: inline-block;
+  background-color: #005599;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-project:hover {
+  background-color: #003366;
+}
+#projects{
+  
+  margin-bottom: 100px;
+}
+
+#resume{
+  
+  margin-bottom: 100px;
+  align-content: center;
+}
+
+#media{
+   margin-top: 100px;
+  align-content: center;
+  margin-bottom: 100px;
+}
+/* ================== CONTACT FORM ================== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Submit button */
+button {
+  background: #005599;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003366;
+}
+
+/* ================== MEDIA RESPONSIVENESS ================== */
+/* MEDIA SECTION */
+#media {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9ff, #e9ecff);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Heading */
+#media h2 {
+    font-size: 2rem;
+    color: #4b0082;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(75, 0, 130, 0.1);
+}
+
+/* Container for video and audio */
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Video Styling */
+.video-box iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(75, 0, 130, 0.2);
+    transition: all 0.3s ease;
+}
+
+.video-box iframe:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(75, 0, 130, 0.3);
+}
+
+/* Audio Styling */
+.audio-box audio {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(75, 0, 130, 0.15);
+    transition: all 0.3s ease;
+}
+
+.audio-box audio:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 18px rgba(75, 0, 130, 0.25);
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Make iframe full width on small screens */
+    iframe {
+        width: 100% !important;
+        height: auto;
+    }
+
+    /* Adjust padding and layout for mobile */
+    #media {
+        width: 95%;
+        padding: 40px 15px;
+    }
+
+    .audio-box audio {
+        width: 100%;
+    }
+}
